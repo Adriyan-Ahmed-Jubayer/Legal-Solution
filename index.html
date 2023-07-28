@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                "primary-text-color": '#707070',
+                "primary-btn-bg-color": '#B68C5A',
               }
             }
           }
@@ -43,6 +44,48 @@
       </style>
 </head>
 <body>
-    
+
+  <!-- Header Section Start From Here -->
+
+    <header class="container mx-auto">
+
+      <!-- 1st / Navigation Section Start From Here  -->
+
+       <section>
+
+        <!-- Navigation Logo Container -->
+        <div class="navbar mt-12">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl"><img src="images/logo2.png" alt=""></a>
+          </div>
+
+          <!-- Navigation Menubar Container -->
+          <div class="navbar-center hidden lg:flex items-center">
+            <ul class="menu menu-horizontal px-1 flex items-center font-medium text-primary-text-color">
+              <li><a>Home</a></li>
+              <li><a>Services <img src="images/Right Arrow.png" alt=""></a></li>
+              <li><a>Cases <img src="images/Right Arrow.png" alt=""></a></li>
+              <li><a>Blog <img src="images/Right Arrow.png" alt=""></a></li>
+              <li><a>Contact Us <img src="images/Right Arrow.png" alt=""></a></li>
+            </ul>
+          </div>
+
+          <!-- Navigation Btn Container -->
+          <div class="navbar-end">
+            <a class="btn bg-primary-btn-bg-color text-white pt-5 pb-8 pr-7 pl-7">Free Consultation</a>
+          </div>
+        </div>
+       </section>
+
+       <!-- 1st / Nagigation Section End Here -->
+
+    </header>
+
+    <!-- Header Section End Here -->
 </body>
 </html>
